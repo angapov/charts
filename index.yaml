@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  auto-deploy-app:
+  - apiVersion: v1
+    created: "2020-07-02T12:18:58.806497+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 0.7.1
+    description: GitLab's Auto-deploy Helm Chart
+    digest: 684b4e882f15a2a089b20d0de7c07f664e3386d48fdc96f509739deea6613927
+    icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
+    name: auto-deploy-app
+    urls:
+    - auto-deploy-app-0.7.0.tgz
+    version: 0.7.0
+  postgresql:
+  - apiVersion: v1
+    created: "2020-07-02T12:18:58.807238+05:30"
+    description: Object-relational database management system (ORDBMS) with an emphasis
+      on extensibility and on standards-compliance.
+    digest: ecf42115a26e41e69819d25bd1cd91bbc0d949c8d5ccb135c1668094763e571b
+    home: https://www.postgresql.org/
+    icon: https://www.postgresql.org/media/img/about/press/elephant.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    maintainers:
+    - name: swordbeta
+    - name: databus23
+    name: postgresql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/postgres
+    urls:
+    - charts/postgresql-0.7.1.tgz
+    version: 0.7.1
+generated: "2020-07-02T12:18:58.802418+05:30"
